@@ -1,10 +1,11 @@
 var utils = require('./utils.js')
+var snakeCase = require('snake-case')
 
 function getColorsXMLSnippet(colors) {
   var code = "<resources>\n";
 
   for(var color of colors) {
-    code += utils.tab(1) + `<color name="${color.name}">${getColorHexXMLValue(color.toHex())}</color>\n`;
+    code += utils.tab(1) + `<color name="${snakeCase(color.name)}">${getColorHexXMLValue(color.toHex())}</color>\n`;
   }
 
   code += "</resources>";
