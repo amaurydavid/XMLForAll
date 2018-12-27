@@ -3,12 +3,34 @@
   "name": "XMLForAll",
   "description": "Generates XML styleguide on all project types.",
   "version": "0.1.0",
+  "options": [
+    {
+      "name": "Text style line height attribute",
+      "type": "picker",
+      "id": "lineHeightAttribute",
+      "default": "lineHeight",
+      "options": [
+        {
+          "name": "lineHeight",
+          "value": "lineHeight"
+        },
+        {
+          "name": "lineSpacingExtra",
+          "value": "lineSpacingExtra"
+        },
+        {
+          "name": "lineSpacingMultiplier",
+          "value": "lineSpacingMultiplier"
+        }
+      ]
+    }
+  ],
   "projectTypes": [
     "android",
     "ios",
     "osx",
     "web"
   ],
-  "moduleURL": "./main.js",
+  "moduleURL": "./main.b7e416b6.js",
   "readmeURL": "./README.md"
 }

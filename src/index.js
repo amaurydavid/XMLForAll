@@ -21,7 +21,13 @@ function styleguideColors(context, colors) {
 }
 
 function styleguideTextStyles(context, textStyles) {
+  var code = "<!-- Project Texts styles -->\n\n";
+  code += xmlTextStyles.getTextStylessXMLSnippet(context, textStyles);
 
+  return {
+    code: code,
+    language: "xml"
+  };
 }
 
 function exportStyleguideColors(context, colors) {
@@ -36,7 +42,14 @@ function exportStyleguideColors(context, colors) {
 }
 
 function exportStyleguideTextStyles(context, textStyles) {
+  var code = `<resources xmlns:tools="http://schemas.android.com/tools">\n\n`;
+  code += xmlTextStyles.getTextStylessXMLSnippet(context, textStyles);
 
+  return {
+    code: code,
+    language: "xml",
+    filename: "styles.xml"
+  };
 }
 
 function comment(context, text) {

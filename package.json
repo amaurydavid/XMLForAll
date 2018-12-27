@@ -16,6 +16,28 @@
       "ios",
       "osx",
       "web"
+    ],
+    "options": [
+      {
+        "name": "Text style line height attribute",
+        "type": "picker",
+        "id": "lineHeightAttribute",
+        "default": "lineHeight",
+        "options": [
+          {
+            "name": "lineHeight",
+            "value": "lineHeight"
+          },
+          {
+            "name": "lineSpacingExtra",
+            "value": "lineSpacingExtra"
+          },
+          {
+            "name": "lineSpacingMultiplier",
+            "value": "lineSpacingMultiplier"
+          }
+        ]
+      }
     ]
   },
   "dependencies": {
