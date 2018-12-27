@@ -1,0 +1,14 @@
+{
+  "packageName": "XMLForAll",
+  "name": "XMLForAll",
+  "description": "Generates XML styleguide on all project types.",
+  "version": "0.1.0",
+  "projectTypes": [
+    "android",
+    "ios",
+    "osx",
+    "web"
+  ],
+  "moduleURL": "./main.js",
+  "readmeURL": "./README.md"
+}
