@@ -2,6 +2,10 @@
   "name": "XMLForAll",
   "version": "0.1.0",
   "description": "Generates XML styleguide on all project types.",
+  "author": {
+    "name": "Amaury DAVID"
+  },
+  "repository": "https://github.com/amaurydavid/XMLForAll",
   "scripts": {
     "start": "zem start",
     "build": "zem build",
