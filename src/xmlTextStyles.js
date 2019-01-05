@@ -8,7 +8,7 @@ function getTextStylessXMLSnippet(context, textStyles) {
   for(var textStyle of textStyles) {
     code += "\n" + utils.tab(1) + `<style name="${snakeCase(textStyle.name)}">\n`;
 
-    code += utils.tab(2) + `<item name="android:fontFamily">@font/${textStyle.fontFace}</item>\n`;
+    code += utils.tab(2) + `<item name="android:fontFamily">@font/${snakeCase(textStyle.fontFace)}</item>\n`;
     code += utils.tab(2) + `<item name="android:textSize">${textStyle.fontSize}sp</item>\n`;
 
     const textAlign = getAndroidTextGravity(textStyle.textAlign);
