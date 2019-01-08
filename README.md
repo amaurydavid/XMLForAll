@@ -10,9 +10,8 @@ Whether it is a web, iOS, Android or macOS project, **XML for all** won't let yo
 
 ## Getting Stated
 
-1. Go to https://extensions.zeplin.io/
-2. Search "XML for all" in the extension
-3. Click on "Add to Zeplin"
+1. Go to https://extensions.zeplin.io/5c31355e0042a36cb93fd344
+2. Click on "Add to Zeplin"
 
 ## Usage
 
