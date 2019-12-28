@@ -1,6 +1,6 @@
 {
   "name": "XMLForAll",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Generates XML styleguide on all project types.",
   "author": {
     "name": "Amaury DAVID"
@@ -46,6 +46,6 @@
   },
   "dependencies": {
     "snake-case": "^2.1.0",
-    "zem": "^0.3.3"
+    "zem": "^0.4.4"
   }
 }

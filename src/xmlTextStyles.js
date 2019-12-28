@@ -2,7 +2,9 @@ var utils = require('./utils.js')
 var colors = require('./xmlColors.js')
 var snakeCase = require('snake-case')
 
-function getTextStylessXMLSnippet(context, textStyles) {
+function getTextStylessXMLSnippet(context) {
+  const textStyles = utils.getResources(context, "textStyles");
+
   var code = "<resources>";
 
   for(var textStyle of textStyles) {

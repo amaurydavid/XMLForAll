@@ -10,9 +10,9 @@ function layer(context, selectedLayer) {
 
 }
 
-function styleguideColors(context, colors) {
-  var code = "<!-- Project Color palette -->\n\n";
-  code += xmlColors.getColorsXMLSnippet(colors);
+function colors(context) {
+  var code = "<!-- Color palette -->\n\n";
+  code += xmlColors.getColorsXMLSnippet(context);
 
   return {
     code: code,
@@ -20,9 +20,9 @@ function styleguideColors(context, colors) {
   };
 }
 
-function styleguideTextStyles(context, textStyles) {
-  var code = "<!-- Project Texts styles -->\n\n";
-  code += xmlTextStyles.getTextStylessXMLSnippet(context, textStyles);
+function textStyles(context) {
+  var code = "<!-- Texts styles -->\n\n";
+  code += xmlTextStyles.getTextStylessXMLSnippet(context);
 
   return {
     code: code,
@@ -30,9 +30,9 @@ function styleguideTextStyles(context, textStyles) {
   };
 }
 
-function exportStyleguideColors(context, colors) {
+function exportColors(context) {
   var code = `<?xml version="1.0" encoding="utf-8"?>\n\n`;
-  code += xmlColors.getColorsXMLSnippet(colors);
+  code += xmlColors.getColorsXMLSnippet(context);
 
   return {
     code: code,
@@ -41,9 +41,9 @@ function exportStyleguideColors(context, colors) {
   };
 }
 
-function exportStyleguideTextStyles(context, textStyles) {
+function exportTextStyles(context) {
   var code = `<resources xmlns:tools="http://schemas.android.com/tools">\n\n`;
-  code += xmlTextStyles.getTextStylessXMLSnippet(context, textStyles);
+  code += xmlTextStyles.getTextStylessXMLSnippet(context);
 
   return {
     code: code,
@@ -58,9 +58,9 @@ function comment(context, text) {
 
 export default {
     layer,
-    styleguideColors,
-    styleguideTextStyles,
-    exportStyleguideColors,
-    exportStyleguideTextStyles,
+    colors,
+    textStyles,
+    exportColors,
+    exportTextStyles,
     comment
 };

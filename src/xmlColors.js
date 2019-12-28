@@ -1,7 +1,9 @@
 var utils = require('./utils.js')
 var snakeCase = require('snake-case')
 
-function getColorsXMLSnippet(colors) {
+function getColorsXMLSnippet(context) {
+  const colors = utils.getResources(context, "colors");
+
   var code = "<resources>\n";
 
   for(var color of colors) {
