@@ -46,6 +46,6 @@
   },
   "dependencies": {
     "snake-case": "^2.1.0",
-    "zem": "^0.3.3"
+    "zem": "^0.4.4"
   }
 }
